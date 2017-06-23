@@ -1,0 +1,42 @@
+{
+  "name": "Funaffect-set",
+  "version": "1.0.4",
+  "description": "base-file-set",
+  "main": "gulpfile.js",
+  "scripts": {
+    "first": "npm i && npm start",
+    "start": "gulp",
+    "build": "gulp build",
+    "live": "gulp live",
+    "up": "vagrant up && gulp live",
+    "check": "npm-check-updates",
+    "update": "npm-check-updates -u"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "@moobay9",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.4.0",
+    "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-react": "^3.1.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-using": "0.1.1",
+    "npm-check-updates": "^2.11.3",
+    "react": "^15.6.0",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
