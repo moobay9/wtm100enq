@@ -1,0 +1,838 @@
+//
+//  File Name   : _form.scss
+//  Description : Form
+//
+
+.hissuMark{
+    color: #fff;
+    display: inline;
+    margin: 0 5px 0 0;
+    background: $color-red;
+    padding: 4px 8px 1px;
+    text-align: center;
+    width: 50px;
+    border-radius:3px;
+    font-size: 15px;
+}
+
+.commonLinkBtn {
+    margin: 0 0 30px;
+    a {
+        background-color: #E67B2A;
+        color: #FFF;
+        text-align: center;
+        font-size: 138%;
+        padding: 15px 100px;
+        text-decoration: none;
+        display: inline-block;
+    }
+}
+
+.commonSubmitBtn {
+    margin: 0 0 30px;
+    text-align: center;
+    input[type=submit]{
+        background-color: #E67B2A;
+        color: #FFF;
+        text-align: center;
+        font-size: 138%;
+        padding: 15px 100px;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+    }
+
+    &-disable{
+        input[type=submit]{
+            background: #C0C0C0;
+            cursor: default;
+        }
+        .btnStyle{
+            box-shadow: #8E8E8E 0px 5px 0px 0px;
+            &:hover{
+                @include opacity(1);
+            }
+            &:active{
+                top: 0px;
+                box-shadow: #8E8E8E 0px 5px 0px 0px;
+            }
+        }
+    }
+}
+
+.attentionText{
+    background: $color-red;
+    display: inline-block;
+    padding: 10px 12px 8px;
+    color: #FFF;
+    margin:15px auto;
+    font-size: 120%;
+    border-radius:10px;
+}
+
+.errorComment{
+    color: $color-red;
+    display: block;
+}
+
+.loginFormBox{
+    border: 3px solid $default-boder-color;
+    padding: 50px 30px;
+    margin: 0 0 50px;
+}
+
+.formInnerBox{
+    width: 505px;
+    margin: 0 auto;
+    h2{
+        font-size: 140%;
+        margin: 0 0 5px;
+    }
+    .form-group{
+        margin: 0 0 25px;
+        span{
+            font-size: 110%;
+            display: block;
+        }
+    }
+    input[type="text"],
+    input[type="password"]{
+        padding: 12px 15px 10px;
+        font-size: 160%;
+        background: #f1f1f1;
+        border: 1px solid #DDD;
+        display: inline-block;
+        margin: 0 0 7px;
+        width: 100%;
+    }
+    .expText{
+        color: $color-red;
+        font-weight: bold;
+        line-height: 1.6;
+        margin: 0 0 25px;
+    }
+    .loginBtn{
+        position: relative;
+        margin: 0 0 30px;
+        .fa{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin: -8px 0 0;
+            font-size: 20px;
+            color: #fff;
+            z-index: 100;
+        }
+        input{
+            background: #E67B2A;
+            border: none;
+            display: block;
+            width: 100%;
+            color: #fff;
+            padding: 25px 0 22px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+    .btnForgot{
+        text-align: center;
+    }
+    .loginError{
+        background: $color-red-light;
+        border-left: 5px solid $color-red;
+        padding: 10px;
+        margin: 0 0 20px;
+        li{
+            padding: 5px 0;
+            font-size: 120%;
+        }
+    }
+}
+
+.registInfoText{
+    padding: 30px 0 10px 15px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid $default-boder-color;
+    dt{
+        font-size: 140%;
+        font-weight: bold;
+        margin: 0 0 15px;
+    }
+    dd{
+        font-size: 120%;
+    }
+    li{
+        margin: 0 0 10px;
+        //padding-left: 0.9em;
+        //text-indent: -0.9em;
+        line-height: 1.6;
+    }
+    li:before{
+        // content: "・";
+    }
+}
+
+.headError{
+    background: $color-red-light;
+    border: 1px solid $default-boder-color;
+    padding: 30px 0 20px 95px;
+    margin: 0 0 20px;
+    .title{
+        font-size: 160%;
+        color: $color-red;
+        font-weight: bold;
+        margin: 0 0 20px;
+    }
+    i{
+        margin: 0 5px 0 0;
+        font-size: 120%;
+    }
+    li{
+        font-size: 120%;
+        margin: 0 0 5px;
+    }
+    li:before{
+        content: "・";
+    }
+}
+
+.formflowBox{
+    border-bottom: 1px solid $default-boder-color;
+    padding: 0 0 30px;
+    margin: 0 0 30px;
+    .flowInner{
+        display: table;
+        width: 100%;
+    }
+    .arrow,
+    .formMain{
+        display: table-cell;
+        vertical-align: top;
+    }
+    .formMain{
+        font-size: 130%;
+        line-height: 1.6;
+        padding: 0 0 10px 10px;
+    }
+    .arrow{
+        width: 75px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        height: 200px;
+        span{
+            position: relative;
+            z-index: 100;
+            display: inline-block;
+            font-size: 24px;
+            background: #fff;
+            width: 40px;
+            height: 40px;
+            padding: 7px 0 0;
+            line-height: 1;
+            font-weight: bold;
+        }
+        &:before,
+        &:after{
+            content: "";
+            position: absolute;
+        }
+        &:after{
+            width: 15px;
+            height: 3000px;
+            left: 30px;
+            bottom: 20px;
+        }
+        &:before{
+            bottom: -15px;
+            border: 20px solid transparent;
+            z-index: 150;
+            width: 40px;
+            left: 17px;
+        }
+    }
+    .agreeTxt{
+        padding: 15px 0 0;
+    }
+    .linkTxt{
+        display: inline-block;
+        margin: 0 0 20px 30px;
+    }
+    label{
+        cursor: pointer;
+    }
+    input[type=checkbox]{
+        margin: 0 5px 0 0;
+    }
+    .h01{
+        margin: 0 0 15px;
+        font-size: 160%;
+    }
+    .expText{
+        padding: 0 0 0 15px;
+        
+        .redB{
+            font-weight: bold;
+            color: $color-red;
+            font-size: 95%;
+        }
+    }
+    .agreeBtn{
+        padding: 15px 0 15px 30px;
+        label{
+            vertical-align: -1px;
+        }
+    }
+}
+
+.formflowBox.no01 .arrow{
+    &:after{
+        background: $color-blue1;
+    }
+    &:before{
+        border-top: 20px solid $color-blue1;
+    }
+    span{
+        border: 3px solid $color-blue1;
+    }
+}
+.formflowBox.no02 .arrow{
+    &:after{
+        background: $color-blue2;
+    }
+    &:before{
+        border-top: 20px solid $color-blue2;
+    }
+    span{
+        border: 3px solid $color-blue2;
+    }
+}
+
+.formflowBox.no03 .arrow{
+    &:after{
+        background: $color-blue3;
+    }
+    &:before{
+        border-top: 20px solid $color-blue3;
+    }
+    span{
+        border: 3px solid $color-blue3;
+    }
+}
+
+.formflowBox.no04 .arrow{
+    &:after{
+        background: $color-blue4;
+    }
+    &:before{
+        border-top: 20px solid $color-blue4;
+    }
+    span{
+        border: 3px solid $color-blue4;
+    }
+}
+
+.formflowBox.no05 .arrow{
+    &:after{
+        background: $color-blue5;
+    }
+    &:before{
+        border-top: 20px solid $color-blue5;
+    }
+    span{
+        border: 3px solid $color-blue5;
+    }
+}
+
+.formflowBox.no06 .arrow{
+    &:after{
+        background: $color-blue6;
+    }
+    &:before{
+        border-top: 20px solid $color-blue6;
+    }
+    span{
+        border: 3px solid $color-blue6;
+    }
+}
+
+.formflowBox.no07 .arrow{
+    &:after{
+        background: $color-blue7;
+    }
+    &:before{
+        border-top: 20px solid $color-blue7;
+    }
+    span{
+        border: 3px solid $color-blue7;
+    }
+}
+
+.formTable{
+    display: table;
+    width: 100%;
+    margin: 0 0 20px;
+    .redB{
+        font-weight: bold;
+        color: $color-red;
+        font-size: 95%;
+    }
+     dt,dd{
+         display: table-cell;
+     }
+     dt{
+         vertical-align: top;
+         width: 280px;
+         overflow: hidden;
+         padding: 25px 0 0 15px;
+     }
+     dd{
+         padding: 20px 0 0 15px;
+     }
+    .formSize01{
+        width: 35%;
+    }
+    .formSize02{
+        width: 70%;
+    }
+    .formSize03{
+        width: 30%;
+    }
+    .formSize04{
+        width: 40%;
+    }
+    .formSize05{
+        width: 15%;
+    }
+    .formSize06{
+        width: 70px;
+    }
+    .hissuMark{
+        float: right;
+        margin: 0px 10px 0 0;
+    }
+    .radioBtn{
+        padding: 6px 0 0;
+        margin: 0 0 5px;
+        label{
+            display: inline-block;
+            margin: 0 20px 10px 0;
+        }
+        input{
+            vertical-align: 2px;
+            margin: 0 5px 0 0;
+        }
+        .radioNo3{
+            width: 360px;
+        }
+        .radioNo-member3{
+            width: 420px;
+        }
+        &-place-4{
+            width: 200px;
+        }
+        &-place02-4{
+            width: 280px;
+        }
+    }
+    .subText{
+        padding: 15px 0 0;
+        margin: 0;
+        display: block;
+    }
+    .subText.marginSp{
+        padding: 0;
+        margin: -5px 0 0;
+    }
+    .zipAutoBtn{
+        background: $color-orange;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 14px;
+        padding: 5px 15px 4px;
+        font-weight: bold;
+        &:hover{
+            @include opacity(0.8);
+        }
+    }
+
+    input[type=text],
+    input[type="password"]{
+        background: #f1f1f1;
+        border: 1px solid $default-boder-color-light;
+        padding: 6px 10px 3px;
+        font-size: 95%;
+        line-height: 1.4;
+    }
+    select{
+        font-size: 95%;
+        margin: -4px 0 0;
+        width: 200px;
+        height: 35px;
+        padding:7px 10px 5px;
+        border: 1px solid #ddd;
+        //-webkit-appearance:button;
+    }
+    
+    .pn{
+	    padding-top: 3px;
+	    padding-bottom: 0px;
+    }
+}
+
+.formTextArea{
+    margin: 0 15px;
+    textarea{
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        background: #F1F1F1;
+        border: 3px solid #dcdcdc;
+        font-size: 95%;
+    }
+    .error textarea{
+        background: #ffe3e0 !important;
+        border: 2px solid #cb8a83 !important;
+    }
+}
+
+.formSubmit.noSubmit{
+    opacity: 0.5;
+    input{
+        cursor: default;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.formSubmit.mb50{
+    padding-bottom: 50px;
+    padding-top: 5px;
+}
+
+.formSubmit{
+    input{
+        text-indent: -9999px;
+        border:none;
+        background:url("/assets/img/common/btn_submit_02.png") no-repeat;
+        display: block;
+        width: 550px;
+        height: 100px;
+        margin: 0 auto;
+        cursor: pointer;
+        &:active{
+            margin: 3px auto -3px;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    &_btn{
+        display: block;
+        width: 550px;
+        margin: 0 auto;
+        text-decoration: none;
+        text-align: left;
+        padding: 40px 0 40px 40px;
+        font-size: 180%;
+        border-radius:3px;
+        position: relative;
+        background: $color-orange;
+        color: #fff !important;
+        i{
+            font-size: 35px;
+            position: absolute;
+            height: 36px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 15px;
+        }
+    }
+}
+
+.submitText{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 120%;
+    line-height: 1.6;
+}
+
+.enqueteList{
+    border-bottom: 1px solid $default-boder-color-light;
+    padding: 20px 0 0;
+    dt{
+        font-weight: bold;
+        padding: 0 0 0 15px;
+        margin: 0 0 10px;
+    }
+    dd{
+        padding: 0 0 15px 15px;
+    }
+    .radioBtn{
+        padding: 15px 0 0;
+        label{
+            margin: 0 25px 0 0;
+        }
+    }
+    .checkBtn{
+        p{
+            margin: 0 0 3px;
+        }
+    }
+    .error textarea{
+        background: #ffe3e0 !important;
+        border: 2px solid #cb8a83 !important;
+    }
+    .formTextArea{
+        margin:15px 0;
+    }
+
+    select{
+        font-size: 90%;
+        margin: 10px 0 15px;
+        width: 300px;
+        padding:7px 10px 5px;
+        border: 1px solid #ddd;
+        -webkit-appearance:button;
+    }
+    .hissuMark{
+        margin: 0 5px 0 0;
+        font-weight: normal;
+    }
+}
+
+.noBorder{
+    border: none !important;
+}
+
+.errorInfo{
+    background: $color-red;
+    display: inline-block;
+    padding: 7px 12px 3px;
+    color: #FFF;
+    margin:8px 0 0;
+    font-size: 80%;
+    border-radius:10px;
+    .fa{
+        margin: 0 5px 0 0;
+        font-size: 120%;
+    }
+}
+
+.error input[type=text],
+.error input[type=password]{
+    background: #ffe3e0 !important;
+    border: 2px solid #cb8a83 !important;
+}
+
+
+
+.formBtn{
+    text-align: center;
+    margin: 0 0 50px;
+    height: 150px;
+    form{
+        display: inline;
+    }
+    .backBtn,
+    .btnSubmit{
+        position: relative;
+        display: inline-block;
+        margin: 0 35px;
+        input[type="submit"]{
+            border: none;
+            color: #fff;
+            display: inline-block;
+            padding: 25px 0 22px;
+            cursor: pointer;
+            font-weight: bold;
+            &:active{
+                position: relative;
+                top: 6px;
+                margin: 0;
+                box-shadow:none;
+                outline: none;
+            }
+        }
+        a{
+            color: #fff;
+            display: inline-block;
+            padding: 25px 0 22px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+    .backBtn{
+        input[type="submit"],
+        a{
+            background: #8f8f8f;
+            width: 290px;
+        }
+        i{
+            position: absolute;
+            top: 58%;
+            margin: -10px 0 0;
+            left: 15px;
+            color: #fff;
+            z-index: 9999;
+        }
+    }
+    .btnSubmit{
+        input[type="submit"],
+        a{
+            // background: $base-color-dark;
+            background: $color-orange;
+            width: 360px;
+        }
+        i{
+            position: absolute;
+            top: 58%;
+            margin: -10px 0 0;
+            right: 15px;
+            color: #fff;
+            z-index: 9999;
+        }
+    }
+}
+
+
+
+.forgetBox{
+    &_list{
+        width: 680px;
+        margin: 0 auto;
+        padding: 20px 0 0;
+        dt{
+            font-size: 120%;
+            text-align: center;
+        }
+        dd{
+            padding: 40px 30px 30px;
+            overflow: hidden;
+            .errorInfo{
+                font-size: 110%;
+            }
+        }
+    }
+    &_text{
+        text-align: center;
+        font-size: 120%;
+        padding-top: 20px;
+    }
+    input[type="text"]{
+        padding: 12px 15px 10px;
+        font-size: 140%;
+        background: #f1f1f1;
+        border: 1px solid #DDD;
+        display: inline-block;
+        margin: 0 0 7px;
+        width: 100%;
+    }
+    .sendBtn{
+        display: block;
+        margin: 20px auto 0;
+        width: 310px;
+        position: relative;
+        .fa{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin: -8px 0 0;
+            font-size: 20px;
+            z-index: 100;
+            color: #fff;
+        }
+        input{
+            background: $color-orange;
+            display: inline-block;
+            border: none;
+            width: 100%;
+            color: #fff;
+            font-size: 140%;
+            padding: 25px 0 22px;
+            cursor: pointer;
+        }
+    }
+    // .errorInfo{
+    //     margin: -10px 0 15px;
+    //     font-size: 120%;
+    // }
+    .noBtn,
+    .okBtn,
+    .backBtn{
+        display:block;
+        border: none;
+        width: 40%;
+        color: #fff;
+        font-size: 120%;
+        padding: 25px 0 22px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        position: relative;
+        cursor: pointer;
+        .fa{
+            position: absolute;
+            top: 50%;
+            margin: -8px 0 0;
+            font-size: 20px;
+            z-index: 100;
+            color: #fff;
+        }
+    }
+    .okBtn{
+        float: right;
+        background: $base-color;
+        .fa{
+            right: 15px;
+        }
+    }
+    .noBtn{
+        float: left;
+        background: #8f8f8f;
+        .fa{
+            left: 15px;
+        }
+    }
+    .backBtn{
+        margin: 0 auto;
+        background: $color-orange;
+        .fa{
+            right: 15px;
+        }
+    }
+    .subText{
+        text-align: center;
+        strong{
+            font-weight: bold;
+        }
+    }
+    .formTable{
+        dt{
+            width: 305px;
+        }
+    }
+}
+
+
+.preRegistText{
+    margin: 0 0 30px;
+    background: $base-color-lighten;
+    padding: 15px;
+    &_main{
+        font-size: 110%;
+        //width: 800px;
+        margin: 0 auto 10px;
+        line-height: 1.6;
+        
+        &_red {
+            color: $color-red;
+        }
+    }
+}

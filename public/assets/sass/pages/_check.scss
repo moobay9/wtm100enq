@@ -1,0 +1,516 @@
+//
+//  File Name   : _check.scss
+//  Description : Check
+//
+
+.mainContent {
+    margin: 10px 0;
+    min-height: 550px;
+}
+
+.close_main{
+	min-height: auto;
+}
+
+.checkContent {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#sideNav {
+    float: left;
+    width: 250px;
+    padding: 20px 15px;
+}
+
+#sideNav.checkNav {
+    width: 200px;
+    padding: 20px 15px;
+}
+
+#mainColumn {
+    float: right;
+    width: 710px;
+    padding: 20px 0 50px 40px;
+    border-left: solid 1px #ddd;
+    min-height: 600px;
+    &.checkColumn {
+        width: 760px;
+    }
+}
+
+#checkarea {
+    .fa {
+        font-size: 200%;
+    }
+    .status_ok {
+        color: $color-yellow-darken;
+    }
+    .status_ng {
+        color: $color-red;
+    }
+    .status_no_check {
+        color: $color-yellow;
+    }
+}
+
+.checkTable {
+    width: 100%;
+    margin-bottom: 30px;
+    th {
+        vertical-align: middle;
+        font-weight: bold;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 120%;
+    }
+    td {
+        vertical-align: middle;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 110%;
+        line-height: 1.8;
+        span {
+            font-weight: bold;
+        }
+    }
+    .checkTableDetail {
+        text-align: center;
+    }
+}
+
+.tac {
+    text-align: center;
+}
+
+.checkStep {
+    font-size: 160%;
+    font-weight: bold;
+    margin: 0 0 30px;
+    color: $base-color-dark;
+    padding: 28px 0 23px;
+    text-align: center;
+    border: 2px solid $base-color-dark;
+    &.active {
+        background-color: $base-color-dark;
+        color: #fff;
+        border: 4px solid $base-color-dark;
+        font-size: 180%;
+    }
+}
+
+.checkStartBtn {
+    margin: 0 0 30px;
+    a {
+        background-color: $base-color-dark;
+        color: #FFF;
+        text-align: center;
+        font-weight: bold;
+        font-size: 200%;
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        border-radius: 3px;
+    }
+    i {
+        font-size: 250%;
+        margin: 0 5px 0 0;
+        vertical-align: middle;
+    }
+    &-caution{
+        span{
+            display: block;
+            background-color: $base-color-dark;
+            color: #FFF;
+            text-align: center;
+            font-weight: bold;
+            font-size: 200%;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            border-radius: 3px;
+
+        }
+    }
+}
+
+.checkCommentArea {
+    overflow: hidden;
+    margin: 0 0 30px;
+}
+
+.step01ErrorBox{
+    border: 2px solid $color-red;
+    border-radius: 3px;
+    font-size: 120%;
+    padding: 24px 0 20px 30px;
+    line-height: 1.6;
+    color: $color-red;
+}
+
+.checkComment {
+    float: left;
+    overflow: hidden;
+    width: 31%;
+    height: 90px;
+    color: #FFF;
+    text-align: center;
+    padding: 15px 5px 0;
+    margin: 0 25px 20px 0;
+    border-radius: 3px;
+    .checkCommentIcon {
+        float: left;
+        font-size: 140%;
+        margin: 0 0 10px;
+        padding: 12px 0 0 10px;
+    }
+    .checkCommentTitle {
+        text-align: left;
+        font-weight: bold;
+        font-size: 160%;
+        margin-bottom: 14px;
+        line-height: 1.2;
+        margin: 0 0 0 50px;
+    }
+    p {
+        font-weight: normal;
+        font-size: 70%;
+        margin: 5px 0 0;
+    }
+}
+
+.checkComment.step03{
+    height: 190px;
+    .checkCommentIcon{
+        float: none;
+        padding: 5px 0 0 0 !important;
+    }
+    .checkCommentIcon .fa{
+        font-size: 280% !important;
+    }
+    .checkCommentTitle {
+        text-align: center;
+        font-size: 148%;
+        margin-bottom: 14px;
+        line-height: 1.2;
+        margin: 0;
+    }
+    p {
+        font-weight: normal;
+        font-size: 70%;
+        margin: 5px 0 0;
+    }
+    .checkCommentIcon {
+        padding: 28px 0 0 10px;
+    }
+}
+
+.checkCommentOk.step03 .checkCommentTitle,
+.checkCommentNg.step03 .checkCommentTitle{
+    padding: 25px 0 0;
+}
+
+.checkCommentOk.step2Box,
+.checkCommentOk.step03{
+    background: #fff;
+    color: $color-yellow-darken !important;
+    border: 2px solid $color-yellow-darken;
+}
+
+.checkCommentCaution.step2Box,
+.checkCommentCaution.step03{
+    background: #fff;
+    color: $color-yellow !important;
+    border: 2px solid $color-yellow;
+}
+
+.checkCommentNg.step2Box,
+.checkCommentNg.step03{
+    background: #fff;
+    color: $color-red !important;
+    border: 2px solid $color-red;
+}
+
+.checkCommentOk {
+    background-color: $base-color-dark;
+    .checkCommentIcon {
+    }
+    .checkCommentTitle {
+    }
+    .step2Com{
+        padding: 8px 0 0;
+    }
+}
+
+.checkCommentCaution {
+    background-color: $color-yellow;
+}
+
+.checkCommentNg {
+    background-color: $color-red;
+    .checkCommentIcon {
+    }
+    .checkCommentTitle {
+    }
+    &.checkComment {
+        margin: 0;
+    }
+    .step2Com{
+        padding: 8px 0 0;
+    }
+}
+
+.sysReqCheck {
+    .checkComment {
+        color: #FFF;
+        height: 90px;
+    }
+    .checkCommentTitle {
+        font-weight: normal;
+        font-size: 120%;
+        line-height: 1.4;
+        text-align: left;
+    }
+    .status_ok {
+        background-color: #fff;
+        border: $color-yellow-darken 2px solid;
+        color: $color-yellow-darken;
+        .checkCommentTitle {
+            margin-top: 22px;
+        }
+    }
+    .status_ng {
+        background-color: #fff;
+        border: $color-red 2px solid;
+        color: $color-red;
+        margin: 0;
+        .checkCommentTitle {
+            margin-top: 22px;
+        }
+    }
+    .status_no_check {
+        background-color: #fff;
+        border: $color-yellow 2px solid;
+        color: $color-yellow;
+        .checkCommentTitle {
+            margin-top: 11px;
+        }
+    }
+}
+
+.scoreTxt {
+    font-size: 700%;
+    font-weight: bold;
+    text-align: center;
+    span {
+        font-size: 30%;
+    }
+}
+
+.scorePreTxt {
+    font-size: 700%;
+    font-weight: bold;
+    margin: 15px 0 0 100px;
+    i{
+        font-size: 100% !important;
+        color: $base-color-dark;
+    }
+
+}
+
+// Progress bar
+// -----------------------------------------------------------
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 2px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 2px;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 2px;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 2px;
+}
+
+.ui-widget-content {
+    border: 1px solid #dddddd;
+}
+
+.ui-progressbar {
+    height: 50px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.ui-progressbar .ui-progressbar-value {
+    height: 100%;
+}
+
+.ui-widget-header {
+    background-color: $color-pink-lighten;
+}
+
+.checkColumn{
+    .checkIntro{
+        &-size{
+            font-size: 120%;
+        }
+    }
+    .confirmMovie{
+        width: auto;
+        .codeBox{
+            width: 63%;
+            input[type=text]{
+                border: 3px solid #AEAEAE;
+            }
+            .errorCom{
+                display: block;
+                margin: 12px 0 0;
+                color: $color-red;
+            }
+        }
+        .sendBtn{
+            width: 35%;
+            input{
+                height: 48px;
+            }
+        }
+    }
+    .footerContactBox .borderBox{
+        padding: 30px 0 30px 30px;
+    }
+    .nowatchBtn{
+        margin: -18px 0 15px;
+        span{
+            width: 35px;
+            vertical-align: 4px;
+            display: inline-block;
+            margin: 0 0 0 -30px;
+        }
+    }
+}
+
+.confirmMovie{
+    width: 880px;
+    margin: 0 auto;
+    padding: 15px 0;
+    .h05{
+        margin: 0 0 30px;
+    }
+    .formBox{
+        overflow: hidden;
+        margin: 0 0 30px;
+    }
+    .codeBox{
+        float: left;
+        width: 280px;
+        input[type="text"]{
+            padding: 12px 15px 14px;
+            font-size: 140%;
+            background: #f1f1f1;
+            border: 1px solid #DDD;
+            display: inline-block;
+            margin: 0 0 7px;
+            width: 100%;
+        }
+        .errorInfo{
+            font-size: 110%;
+        }
+    }
+    .sendBtn{
+        display: block;
+        width: 280px;
+        float: right;
+        position: relative;
+
+        .fa{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin: -10px 0 0;
+            font-size: 20px;
+            z-index: 100;
+            color: #fff;
+        }
+        input{
+            background: $base-color-dark;
+            display: inline-block;
+            border: none;
+            width: 100%;
+            color: #fff;
+            font-size: 120%;
+            height: 54px;
+            cursor: pointer;
+        }
+    }
+}
+
+.checkCommentOkTxt {
+    color: $color-yellow-darken;
+}
+
+.checkCommentCautionTxt {
+    color: $color-yellow;
+}
+
+.checkCommentNgTxt {
+    color: $color-red;
+}
+
+.movieConplete{
+    text-align: center;
+    padding: 70px 0 0;
+    .h04{
+        margin: 0 0 60px;
+        color: $base-color-dark;
+        span{
+            display: block;
+            font-size: 80%;
+            font-weight: normal;
+            margin: 20px 0 0;
+        }
+    }
+    .backBtn{
+        display: inline-block;
+        width: 330px;
+        color: #fff;
+        text-decoration: none;
+        background: $color-orange;
+        position: relative;
+        font-size: 140%;
+        padding: 20px 0 18px;
+        margin: 0 0 60px;
+        i{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin: -10px 0 0;
+        }
+    }
+    .backBtn02{
+        display: inline-block;
+        width: 700px;
+        color: #fff;
+        text-decoration: none;
+        background: $color-orange;
+        position: relative;
+        font-size: 140%;
+        padding: 20px 0 18px;
+        margin: 0 0 60px;
+        letter-spacing: 1px;
+        i{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin: -10px 0 0;
+        }
+    }
+}

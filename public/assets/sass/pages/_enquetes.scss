@@ -1,0 +1,84 @@
+//
+//  File Name   : _enquetes.scss
+//  Description : Enquetes
+//
+
+.preenquetesHead{
+  font-size: 125%;
+  line-height: 1.8;
+  width: 800px;
+  margin: 0 auto 30px;
+  &_strong{
+      text-align: center;
+      font-weight: bold;
+      font-size: 110%;
+  }
+}
+
+.enquetesContainer{
+    .hissuMark{
+        float: none;
+    }
+    .formTable{
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        dt{
+            width: auto;
+            display: block;
+            font-weight: bold;
+            background: #F1F1F1;
+            padding-top: 12px;
+            padding-bottom: 10px;
+            .hissuMark{
+              font-weight: normal;
+            }
+        }
+        dd{
+            display: block;
+            padding-left: 70px;
+        }
+    }
+    &-confirm{
+      .formTable{
+        dt{
+          padding-top: 13px;
+          padding-bottom: 13px;
+          line-height: 1.3;
+        }
+        dd{
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+        .formTextArea{
+          margin: 0;
+        }
+      }
+    }
+    &_select{
+        select{
+            cursor: pointer;
+            width: 100px;
+            vertical-align: 0px;
+            margin-left: 20px;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+    .errorTextarea{
+      textarea{
+        background: #ffe3e0 !important;
+        border: 2px solid #cb8a83 !important;
+      }
+    }
+    .error{
+      textarea{
+        background: #ffe3e0 !important;
+        border: 2px solid #cb8a83 !important;
+      }
+    }
+    &_etcContainer{
+      padding-top: 14px;
+    }
+}

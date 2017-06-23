@@ -1,0 +1,358 @@
+//
+//  File Name   : _regist.scss
+//  Description : Regist
+//
+
+// Top
+// -----------------------------------------------------------
+
+.registIntroTxt{
+    font-size: 120%;
+    line-height: 1.8;
+    // padding: 10px 0 10px 62px;
+    text-align: center;
+    padding: 5px 0;
+    color: #294593;
+    strong{
+        font-weight: bold;
+        font-size: 120%;
+        line-height: 1.6;
+    }
+    span{
+        color: $color-pink;
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
+
+.registIntroTxt02{
+    text-align: center;
+    font-size: 180%;
+    font-weight: bold;
+    color: $color-red;
+    letter-spacing: 2px;
+}
+
+.registInfo {
+    .borderBox{
+        padding: 17px 0 0 130px;
+    }
+    p {
+        margin: 0 0 15px;
+        font-size: 120%;
+        line-height: 1.8;
+    }
+    strong{
+        font-weight: bold;
+        font-size: 110%;
+        line-height: 1.4;
+    }
+}
+
+.nowatchBtn{
+    text-align: center;
+    font-size: 140%;
+    margin: -18px 0 20px;
+    font-weight: bold;
+    a{
+        display: block;
+        padding: 8px 0;
+        background: $color-orange-lighten;
+        color: $color-orange-darken;
+        text-decoration: none;
+        position: relative;
+        &:hover{
+            opacity: 0.8;
+        }
+        span{
+            width: 55px;
+            vertical-align: 6px;
+            display: inline-block;
+            margin: 0 0 0 -30px;
+        }
+    }
+}
+
+.registForm{
+    text-align: center;
+    .borderBox{
+        padding: 40px 0;
+        margin: 0 0 80px 0;
+    }
+    .textForm{
+        input{
+            width: 380px;
+            padding: 13px 15px 16px;
+            font-size: 150%;
+            background: #f1f1f1;
+            border: 3px solid #AEAEAE;
+        }
+    }
+    .formText{
+        text-align: center;
+        // color: $color-red;
+        font-size: 110%;
+        padding: 0 0 20px;
+        margin: -20px 0 0;
+    }
+    .submitBtn{
+        padding: 40px 0 0;
+        &_btn{
+            display: block;
+            width: 500px;
+            margin: 0 auto;
+            text-decoration: none;
+            text-align: left;
+            padding: 20px 0 20px 40px;
+            font-size: 180%;
+            border-radius:3px;
+            position: relative;
+            background: $base-color-dark;
+            color: #fff;
+            i{
+                font-size: 35px;
+                position: absolute;
+                height: 36px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                right: 25px;
+            }
+
+        }
+    }
+}
+
+.preRegistText{
+    margin: 0 0 30px;
+    background: $base-color-lighten;
+    padding: 15px;
+    &_main{
+        font-size: 110%;
+        //width: 800px;
+        margin: 0 auto 10px;
+        line-height: 1.6;
+    }
+    &_link{
+        //width: 800px;
+        margin: 0 auto 20px;
+        a{
+            font-size: 110%;
+            display: inline-block;
+            margin: 0 10px 0 0;
+        }
+    }
+}
+
+.preRegistPrivacy{
+    //width: 800px;
+    margin: 0 auto 60px;
+    &_head{
+        margin-bottom: 15px;
+        input{
+            display: inline-block;
+            margin: 0 5px 0 0;
+        }
+        &-error{
+            background: $color-red;
+            width: 330px;
+            padding: 7px 12px 3px;
+            color: #FFF;
+            display: block;
+            margin:8px 0 0 55px;
+            border-radius:10px;
+            .fa{
+                margin: 0 5px 0 0;
+                font-size: 120%;
+            }
+        }
+    }
+    &_title{
+        margin: 0 0 10px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    &_formBox{
+        border: 1px solid $default-boder-color-light;
+        padding: 20px 50px;
+        input[type=text]{
+            padding: 8px 5px;
+            font-size: 16px;
+            width: 560px;
+            line-height: 1.4;
+        }
+        &-inner{
+            margin-bottom: 15px;
+            &.error{
+                .text-form{
+                    background: #FEE4E1;
+                    box-shadow: none;
+                    border: 3px solid #AEAEAE;
+                }
+            }
+        }
+        &-error{
+            background: $color-red;
+            width: 330px;
+            padding: 7px 12px 3px;
+            color: #FFF;
+            margin:8px 0 0 160px;
+            border-radius:10px;
+            .fa{
+                margin: 0 5px 0 0;
+                font-size: 120%;
+            }
+        }
+    }
+    .text-form{
+        background: #f1f1f1;
+        border: 3px solid #AEAEAE;
+    }
+}
+
+.preRegistPrivacyInfo{
+    font-size: 110%;
+    line-height: 1.6;
+    padding: 10px 0;
+    .finishText{
+        text-align: left;
+        strong{
+            font-weight: bold;
+            margin: 0 0 5px;
+        }
+    }
+    &-font-s{
+        font-size: 95%;
+        padding-top: 30px;
+    }
+}
+
+
+.mailSend.spacerBtm{
+    margin: 0 0 50px;
+}
+
+.mailSend{
+    .backBtn{
+        text-align: center;
+        display: block;
+        width: 330px;
+        color: #fff;
+        font-size: 120%;
+        text-decoration: none;
+        background: $base-color-dark;
+        position: relative;
+        padding: 20px 0 18px;
+        margin: 0 auto 30px;
+        i{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin: -10px 0 0;
+        }
+    }
+    .thanksHl{
+        // font-family: $font-family-mincho;
+        text-align: center;
+        font-size: 160%;
+        margin: 50px 0;
+    }
+    .thanksExp{
+        text-align: center;
+        margin: 0 0 30px;
+        dt{
+            font-size: 140%;
+            font-weight: bold;
+            margin: 0 0 50px;
+            line-height: 1.6;
+            color: $base-color-dark;
+            border: 1px solid $default-boder-color-light;
+            padding: 30px 0;
+        }
+        dd{
+            font-size: 120%;
+        }
+        .mailText{
+            text-align: left;
+            // padding: 0 0 0 180px;
+            // font-size: 110%;
+            line-height: 1.8;
+            strong{
+                font-weight: bold;
+            }
+        }
+        .mainMessage{
+            font-size: 150%;
+            margin: 0 0 50px;
+            .mainMessageSubtext{
+                display: inline-block;
+                font-size: 90%;
+                margin: 20px 0 0;
+            }
+        }
+        .finishText{
+            font-size: 110%;
+            padding: 0 0 0 180px;
+            text-align: left;
+            strong{
+                font-weight: bold;
+                margin: 0 0 5px;
+            }
+        }
+    }
+    .h01{
+        margin:50px 0 0;
+    }
+    .contactInfo{
+        border: 1px solid $default-boder-color-light;
+        padding: 30px 0 30px 190px;
+        font-size: 120%;
+        line-height: 1.8;
+        margin: 0 0 30px;
+        strong{
+            font-weight: bold;
+        }
+    }
+}
+
+.registComplete{
+    border: 1px solid $base-color;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    color: $base-color-dark;
+    &_title{
+        font-weight: bold;
+        font-size: 180%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &_main{
+        text-align: center;
+        font-size: 120%;
+        // padding-left: 200px;
+    }
+    &-size{
+        font-size: 130%;
+        font-weight: bold;
+        padding-top: 30px;
+    }
+}
+
+.registChangeBox{
+    .formTable{
+        dt{
+            width: 305px;
+        }
+    }
+}
+
+
+.close-text{
+    font-size: 170%;
+    font-weight: bold;
+    //margin: 0 0 20px;
+    line-height: 1.6;
+    color: $base-color-dark;
+    padding: 80px 0 50px;
+    letter-spacing: 1px;
+}

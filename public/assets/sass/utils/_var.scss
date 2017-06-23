@@ -1,0 +1,87 @@
+// Theme Color
+//-----------------------------------------------------------
+
+$default-bg-color : #fff;
+
+$base-color: #cae2f8;
+$base-color-lighten:  lighten($base-color, 5%);;
+$base-color-dark: #0074b8;
+
+$color-red: #cb2c41;
+$color-red-light: #fee4e1;
+
+$color-orange: #d86917;
+$color-orange-lighten: lighten($color-orange, 35%);
+$color-orange-darken: darken($color-orange, 10%);
+
+$color-orange02: #FFF0B1;
+$color-orange02-lighten: #FFFBC0;
+$color-orange02-darken: #716A03;
+
+$color-yellow: #dca512;
+$color-yellow-lighten: lighten($color-yellow, 50%);
+$color-yellow-darken: darken($color-yellow, 15%);
+
+$color-pink: #be2c71;
+$color-pink-lighten: #b56b6c;
+$color-pink-darken: darken($color-pink, 15%);
+
+$color-green: #BFF8D0;
+$color-green-lighten: lighten($color-green, 50%);
+$color-green-darken: darken($color-green, 15%);
+
+$color-darkgreen: #4c9120;
+$color-darkgreen-lighten: lighten($color-green, 50%);
+$color-darkgreen-darken: darken($color-green, 15%);
+
+$color-blue: #0073c8;
+$color-blue-lighten: lighten($color-blue, 50%);
+$color-blue-darken: darken($color-blue, 15%);
+
+$color-blue1: lighten(#0073c8, 30%);
+$color-blue2: darken($color-blue1, 10%);
+$color-blue3: darken($color-blue1, 20%);
+$color-blue4: darken($color-blue1, 30%);
+$color-blue5: darken($color-blue1, 40%);
+$color-blue6: darken($color-blue1, 45%);
+$color-blue7: darken($color-blue1, 50%);
+
+$color-purple: #8168F9;
+$color-purple-lighten: lighten($color-purple, 22%);
+$color-purple-darken: #624CCA;
+
+
+
+// Link & Background
+//-----------------------------------------------------------
+
+$link-color : #00E;
+
+// Font
+//-----------------------------------------------------------
+
+
+$font-family-gothic-base: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+// $font-family-gothic: 'Noto Sans Japanese', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$font-family-mincho: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+$font-family-english: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+
+$default-font-color : #333;
+$default-line-height : 1.6;
+
+// Border
+//-----------------------------------------------------------
+
+$default-boder-color : #808080;
+$default-boder-color-light : #dddddd;
+
+// Media Queries
+//-----------------------------------------------------------
+
+$pc-min: 768px; //PC Small
+$pc-max: 1280px; //PC Large
+// $tablet-min : 700px; //Tab Small
+// $tablet-max : 900px; //Tab Large
+$sp-min : 0px; //SP Small
+$sp-max : 768px; //SP Large

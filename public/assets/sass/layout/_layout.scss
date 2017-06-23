@@ -1,0 +1,198 @@
+//
+//  File Name   : _layout.scss
+//  Description : Layout
+//
+
+// wrapper
+// -----------------------------------------------------------
+
+#wrapper {
+    text-align: left;
+    font-size: 140%;
+}
+
+// Container
+// -----------------------------------------------------------
+
+.container {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    @include clearfix;
+    line-height: 1.4;
+}
+
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+.container {
+    *zoom: 1;
+}
+
+// common
+// -----------------------------------------------------------
+
+.mainContent {
+    margin: 10px 0;
+}
+
+
+// header
+// -----------------------------------------------------------
+
+
+#header{
+    .headHelpBtn{
+        position: absolute;
+        right:0;
+        top: 0;
+    }
+    .logOutBtn{
+        position: absolute;
+        right:65px;
+        top: 0px;
+    }
+    .logOutBtn,
+    .headHelpBtn{
+        a{
+/*
+            background: $base-color;
+            color: $base-color-dark;
+*/
+						background-color: $color-blue;
+						color: #fff;
+            font-size: 80%;
+            display: inline-block;
+            padding: 4px 13px;
+            text-align: center;
+            border-radius:0 0 3px 3px;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .headerLine{
+        padding: 15px 0;
+        overflow: hidden;
+        &_logo{
+            display: inline-block;
+            padding-top: 3px;
+        }
+    }
+}
+
+.headInfo{
+    float: right;
+    text-align: right;
+    padding: 18px 0 0;
+    strong{
+        font-size: 180%;
+        display: block;
+        font-weight: bold;
+    }
+}
+
+.headFlowBox{
+    margin: 0 0 25px;
+    ul{
+        overflow: hidden;
+        margin-left: -32px;
+    }
+    li{
+        float: left;
+        background: #919191;
+        width: 221px;
+        margin-left: 32px;
+        position: relative;
+        padding: 8px 0;
+        &:after{
+            content: "";
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-left: 20px solid #919191;
+            position: absolute;
+            right: -20px;
+            top: 0;
+        }
+    }
+    &-active{
+        background: #ca6215 !important;
+        &:after{
+            border-left: 20px solid #ca6215 !important;
+        }
+
+    }
+    &-noarrow{
+        &:after{
+            display: none;
+        }
+    }
+    &_step{
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    &_comment{
+        color: #fff;
+        text-align: center;
+    }
+    &-col5{
+    }
+
+}
+
+// // Footer
+// -----------------------------------------------------------
+
+#footer {
+    padding: 30px 0 20px;
+    border-top: 1px solid #ddd;
+    margin: 70px 0 0;
+    .container {
+        overflow: hidden;
+    }
+}
+
+.copyright {
+    float: left;
+    font-size: 90%;
+    margin: 0;
+}
+
+.ldhLogo {
+    float: right;
+    margin: 0;
+    width: 248px;
+}
+
+.footerContactBox{
+    .h01{
+        margin:50px 0 0;
+    }
+    .footerContactSubtxt{
+        display: block;
+        font-weight: normal;
+        font-size: 70%;
+        margin: 5px 0 0;
+    }
+    .borderBox{
+        padding: 30px 0 30px 190px;
+        font-size: 110%;
+        line-height: 1.8;
+        margin: 0;
+        strong{
+            font-weight: bold;
+        }
+    }
+}

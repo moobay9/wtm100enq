@@ -1,0 +1,248 @@
+//
+//  File Name   : _afterenquetes.scss
+//  Description : Afterenquetes
+//
+
+.afterenquetesHead{
+    font-size: 125%;
+    line-height: 1.8;
+    width: 765px;
+    margin: 0 auto 30px;
+    strong{
+        font-weight: bold;
+    }
+}
+
+.afterenqueteProf{
+    margin-bottom: 50px;
+    .formTable{
+        font-size: 120%;
+        .afterenqueteProf-pos{
+            padding: 25px 0 0 20px;
+        }
+        .afterenqueteProf-pos02{
+            padding: 35px 0 0 20px;
+        }
+        .afterenqueteProf_radio{
+            padding-top: 37px;
+            label{
+                cursor: pointer;
+                display: inline-block;
+                margin: 0 5px 0 0;
+            }
+        }
+         dt,dd{
+             border-top: 1px solid #ddd;
+         }
+    }
+    &_text{
+        font-size: 140%;
+        font-weight: bold;
+        padding: 0 0 0 15px;
+    }
+    input[type=text]{
+        width: 330px;
+    }
+    .afterenqueteConfirm_formTable{
+        dt,dd{
+            padding-top: 25px;
+        }
+    }
+    .errorInfo{
+        width: 330px;
+    }
+    &_etcbox{
+        padding-top: 15px;
+    }
+}
+
+//事後アンケート確認画面
+.afterenquetesMain.afterConfirm{
+    .expText{
+        padding-left: 0;
+    }
+    .pre_dd{
+        padding: 10px 0 10px 28px;
+        font-size: 95%;
+    }
+    .pre_dd_etctext{
+        padding: 5px 0 0;
+    }
+    .afterQ3_answer{
+        display: inline-block;
+        margin: 0 10px 0 0;
+    }
+    .afterQReason{
+        padding-left: 0;
+    }
+    .afterRadioBox03{
+        margin: 0 0 10px;
+    }
+}
+
+
+
+.afterenquetesMain{
+    .formflowBox .formMain{
+        font-size: 120%;
+    }
+    .expText{
+        font-size: 110%;
+    }
+    .preenquetes_title{
+        font-size: 97%;
+    }
+    .after_checkbox{
+        label{
+            display: inline-block;
+        }
+        p{
+            display: inline-block;
+            width: 190px;
+        }
+        .after_checkbox-11{
+            width: 280px;
+        }
+        .after_checkbox-12{
+            width: auto;
+            input[type=text]{
+                width: 300px;
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+    .after_checkbox{
+        label{
+            display: inline-block;
+        }
+        p{
+            display: inline-block;
+            width: 190px;
+        }
+        .after_checkbox-11{
+            width: 280px;
+        }
+        .after_checkbox-12{
+            width: auto;
+            input[type=text]{
+                width: 300px;
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+    .afterQ3{
+        overflow: hidden;
+        padding: 10px 0;
+        &_title{
+            display: inline-block;
+            width: 140px;
+        }
+        &-large{
+            .afterQ3_ok{
+                input[type="text"]{
+                    width: 387px;
+                }
+            }
+        }
+        &_ok{
+            display: inline-block;
+            margin: 0 10px 0 0;
+            input[type="text"]{
+                width: 289px;
+            }
+        }
+        &_no{
+            label{
+                display: inline-block;
+                cursor: pointer;
+                input[type="checkbox"]{
+                    margin: 0 0 0 5px;
+                }
+            }
+        }
+    }
+    .afterQReason{
+        padding: 10px 0 0 23px;
+        input[type=text]{
+            width: 660px;
+        }
+    }
+    .afterRadioBox{
+        label{
+            margin: 0 7px 0 0;
+            font-size: 93%;
+        }
+        &_inner{
+            margin: 0 0 1em;
+        }
+    }
+    .afterRadioBox02{
+        &_title{
+            float: left;
+            width: 55px;
+        }
+        &_inner{
+            margin: 0 0 1em 52px;
+            label{
+                font-size: 92%;
+                text-align: right;
+                margin-right: 10px;
+            }
+        }
+    }
+    .afterRadioBox03{
+        margin: 0 0 1.5em;
+        &_title{
+            margin: 0 0 10px;
+        }
+        &_inner{
+            label{
+                margin: 0 6px 0 0;
+            }
+        }
+    }
+
+    .border_top_none{
+        border-top: none;
+    }
+    .hissuMark{
+        float: none;
+    }
+    .pt0{
+        padding-top: 0;
+    }
+    .formTable{
+        margin-bottom: 10px;
+        dd{
+            padding-left: 0;
+        }
+        dt,dd{
+            border-top: 1px solid #ddd;
+        }
+    }
+    .pre_dd{
+        padding-left: 64px;
+    }
+    .pre_dd_con{
+        padding-left: 32px;
+    }
+    .confirm_indent{
+        padding: 0 0 0 20px;
+        margin: 0 0 1em;
+    }
+    .errorInfo{
+        width: 590px;
+    }
+    .after_textarea{
+        font-size: 16px;
+        width: 99%;
+        height: 140px;
+        padding: 10px;
+        background: #F1F1F1;
+        border: 1px solid #dcdcdc;
+    }
+    .error textarea{
+        background: #ffe3e0;
+        border: 2px solid #cb8a83;
+    }
+}

@@ -51,9 +51,9 @@ module.exports = {
     sass_src: cmnDir + "sass/**/*.scss",
     react_src: cmnDir + "browserify/*.{js,jsx}",
     target: [
-      "./htdocs/**/*.html",
+      "./public/**/*.html",
       "fuel/app/{classes,config,lang,views}/**/*.php",
-      "htdocs/**/*.php",
+      "public/**/*.php",
       cmnDir + "js/*.js",
       cmnDir + "img/**/*",
       cmnDir + "css/*.css"
