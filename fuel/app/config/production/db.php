@@ -1,14 +1,20 @@
 <?php
-/**
- * The production database settings. These get merged with the global settings.
- */
 
-return array(
-	'default' => array(
-		'connection'  => array(
-			'dsn'        => 'mysql:host=localhost;dbname=fuel_prod',
-			'username'   => 'fuel_app',
-			'password'   => 'super_secret_password',
-		),
-	),
-);
+return [
+    'default' => [
+        'type' => 'mysqli',
+        'connection'  => [
+            'username'   => 'wtm100',
+            'password'   => 'wtm100',
+            'port'       => '3306',
+            'hostname'   => 'localhost',
+            'database'   => 'wtm100',
+            'persistent' => false,
+            'compress'   => true,
+        ],
+        'charset'      => 'utf8',
+        'enable_cache' => true,
+        'profiling'    => true,
+        'table_prefix' => 'wtm_',
+    ],
+];
