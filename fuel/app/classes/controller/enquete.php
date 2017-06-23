@@ -27,6 +27,14 @@ class Controller_Enquete extends Controller_Template
             if ($val->run())
             {
                 // TODO: DB保存
+                $_enqute = [
+                    'name'    => $val->validated('name'),
+                    'best'    => $val->validated('best'),
+                    'remarks' => $val->validated('remarks'),
+                ];
+
+                $enquete = Model_Enquete::forge($_enqute);
+                $enquete->save();
 
                 Response::redirect('thanks');
             }
