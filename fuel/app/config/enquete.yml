@@ -1,120 +1,13 @@
 enquete:
     1:
-        title: 広島弁吹き替えシリーズのその後とWEB TOUCH MEETING
+        title: demo
         organization:
-        name: Nyoho
+        name: Myoho
         group: 0
 
     2:
-        title: 広島フロントエンド勉強会の宣伝とかそういうの
-        organization: codecode
-        name: 井上
+        title: test title
+        organization: code
+        name: Inoino
         group: 1
 
-    3:
-        title: ネットワークの速度とは？
-        organization: 
-        name: 岩崎
-        group: 1 
-
-    4:
-        title: これからのWeb制作は再利用と効率化だ！時短ツールを導入しよう
-        organization: エム・フィールド
-        name: 神守
-        group: 1
-
-    5:
-        title: Adobe XDでwebデザインしてみた!
-        organization: リコネクト
-        name: 中井
-        group: 1
-
-    6:
-        title: ゼロからの起業〜出会いが人生を変える〜
-        organization: MIRAI
-        name: 西中
-        group: 1
-
-    7:
-        title: ウェブ制作と複合力
-        organization: カンドウコーポレーション/シェアフル
-        name: 柳谷
-        group: 1
-
-    8:
-        title: I've got wings
-        organization: 栄諧情報システム
-        name: 槌本 裕二
-        group: 2
-
-    9:
-        title: 知っていると、できるヤツ！お客さんたちが所属している広島の経営者団体の基礎知識
-        organization: カラフルブリック
-        name: 島原
-        group: 2
-
-    10:
-        title: 僕は今年あと何回山口県から来ましたと言うだろう
-        organization: lesson5
-        name: ひさっち
-        group: 2
-    
-    11:
-        title: エンジニアの勉強会をやって、思ってる事を喋ってたら仕事が増えた気がするお話
-        organization: ビットリバー
-        name: 安藤
-        group: 2
-
-    12:
-        title: ゲームスクール2009~2017 企業は学生をどう受け入れば良いのか？
-        organization: lemonte
-        name: 佐々木
-        group: 2
-
-    13:
-        title: アップルップルで開発しているJavaScriptライブラリの紹介
-        organization: アップルップル
-        name: 山本
-        group: 2
-
-    14:
-        title: 101回目のウェブタッチ
-        organization: サブスレッド
-        name: かけなび
-        group: 3
-
-    15:
-        title: 親子で参加できる勉強会
-        organization: トライポット
-        name: 藤田
-        group: 3
-    
-    16:
-        title: Spice on work and life
-        organization: シュガースポット
-        name: 佐藤
-        group: 3
-    
-    17:
-        title: おるんか＆おなかすいた
-        organization: ファナフェクト
-        name: 大林
-        group: 3
-    
-    18:
-        title: ウェブタッチと広島と私
-        organization: KDDIウェブコミュニケーションズ
-        name: 長嶋
-        group: 3
-
-    19:
-        title: これから くるっ！ キーワード4つ
-        organization: テレファーム
-        name: 赤木
-        group: 3
-
-    20:
-        title: 参加していただいた全ての人に感謝〜WTM振り返り〜
-        organization: WTM主催
-        name: 藤本
-        group: 4
